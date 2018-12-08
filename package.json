@@ -1,0 +1,14 @@
+{
+  "name": "vue-cli-plugin-version",
+  "version": "1.0.0",
+  "description": "version plugin for vue cli3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vue-cli"
+  ],
+  "author": "alice",
+  "license": "ISC"
+}
