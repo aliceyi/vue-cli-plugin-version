@@ -4,7 +4,7 @@ function witerFile (path, data) {
       if(err){
         console.error(err);
       } else {
-        console.log('写入成功');
+        console.log('witer done');
       }
     })
 }
@@ -22,18 +22,17 @@ module.exports = (api, projectOptions) => {
     fs.exists(DIR, function (exists) {
      if(exists){
        // 创建 version.js
-       console.log('检查 verson')
+       console.log('witer version')
        witerFile(VERSION, `{"${NAME}":${env.VERSION}}`)
      }else {
        fs.mkdir(`${path}/static`, function() {
-         console.log('创建 static')
+         console.log('create static')
          witerFile(VERSION, `{"${NAME}":${env.VERSION}}`)
        });  
-       
      }
     });
   })
 }
 module.exports.defaultModes = {
-  build: 'production'
+  version: 'production'
 }
