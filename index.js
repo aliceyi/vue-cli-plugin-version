@@ -21,7 +21,7 @@ module.exports = (api, projectOptions) => {
     const VERSION = `${DIR}/${NAME}.json`
     fs.exists(DIR, function (exists) {
      if(exists){
-       // 创建 version.js
+       // witer version.js
        console.log('witer version')
        witerFile(VERSION, `{"${NAME}":${env.VERSION}}`)
      }else {
